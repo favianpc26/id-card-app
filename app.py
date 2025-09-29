@@ -113,8 +113,8 @@ canvas.create_oval(cx - inner_r, avatar_cy - inner_r,
 
 # Cargar y mostrar la foto del usuario
 try:
-    foto_path = r"C:\Users\Favian\Downloads\1c31fc28-ef78-402c-997d-318b0757f112.jpg"
-    img_foto = Image.open(foto_path)
+foto_path = "user_photo.jpg"  # o simplemente comenta esta línea
+img_foto = Image.open(foto_path)
     
     # Redimensionar y recortar la imagen en círculo
     foto_size = int(inner_r * 2)
@@ -227,3 +227,4 @@ id_fecha = canvas.create_text(cx, hora_y + 160, text=datetime.now().strftime("%d
 # -------------------------
 root.after(0, actualizar_reloj)
 root.mainloop()
+
